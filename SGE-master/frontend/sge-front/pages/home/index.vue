@@ -15,7 +15,7 @@ const sair = ()=>{
 
 <template>
     <div>
-        <h1>Minha Tela Home!!!</h1>    
+        <h1>Letícia eu te amo sua linda e maravilhosa!!!</h1>    
         <button @click="sair" class="customButton">SAIR</button>
     </div>
 </template>
