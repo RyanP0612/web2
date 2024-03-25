@@ -1,0 +1,13 @@
+
+*,
+html,
+body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+/* Importar os estilos do PrimeVue */
+@import 'primevue/resources/primevue.min.css';
+@import 'primevue/resources/themes/bootstrap4-light-blue/theme.css';
