@@ -1,6 +1,7 @@
 <script setup>
 import InputSwitch from 'primevue/inputswitch';
 import ChildComponent from '~/components/DropDown.vue';
+import CustomLayout from '~/components/CustomLayout.vue';
 import { ref } from 'vue';
 const inputValue1 = ref('');
 const inputValue2 = ref('');
@@ -71,14 +72,20 @@ const calc = () => {
      
   }
 
+  
+
 //   resultado.value = "lero";
 };
+const ex3 = () =>{
+ navigateTo("/exercicio3");
+}
+
 </script>
 
 <template>
     <div>
         
-       <div class="teste">
+       <!-- <div class="teste">
             <h1>LETICIA EU TE AMOOOOOOOOOOOOOOOOOO</h1>
        </div>
        <div class="magalu">
@@ -88,8 +95,9 @@ const calc = () => {
 
         <h2>Exercicios</h2>
         
-       </div>
-       <div class="linha"></div>
+       </div> -->
+       <CustomLayout/>
+       
        <div class="tela" :style="{ backgroundColor: colors, color:  colorsText } ">
         
         <h1>exercicio 2</h1>
@@ -123,7 +131,10 @@ const calc = () => {
         <InputSwitch v-model="checked"  @change="changee"/>
         
         <br><br><hr>
-        <button @click="voltar">Back</button>
+        <span>
+        <button @click="ex3">Avançar</button>
+        <button @click="voltar">Voltar</button>
+      </span>
        </div>
 
       

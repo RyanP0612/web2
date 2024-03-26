@@ -3,11 +3,15 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   
   modules: [
-    'nuxt-primevue'
+    'nuxt-primevue',
+    'vue3-carousel-nuxt'
   ],
+  carousel: {
+    prefix: 'MyPrefix'
+  },
   primevue: {
     components: {
-      include: ['listbox','dropdown','inputswitch']
+      include: ['listbox','dropdown','inputswitch','carousel']
     }
   },
 

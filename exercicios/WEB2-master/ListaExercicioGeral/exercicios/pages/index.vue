@@ -3,6 +3,7 @@
 <script setup>
 import ChildComponent from '~/components/CustomComp.vue';
 import ChildComponent2 from '~/components/CustomComp.vue';
+import CustomLayout from '~/components/CustomLayout.vue';
 
 const selectOptions = [
   { name: 'Instagram', value: 'al', iconImg: "https://cdn-icons-png.flaticon.com/256/4138/4138124.png" },
@@ -30,20 +31,11 @@ let selectedValue2 = '';
 <template>
     <div>
         
-       <div class="teste">
-            <h1>LETICIA EU TE AMOOOOOOOOOOOOOOOOOO</h1>
-       </div>
-       <div class="magalu">
-        
-        <img class="img" src="assets\img\acad.png" alt="">
-        
-
-        <h2>Exercicios</h2>
-       </div>
-       <div class="linha"></div>
+       <CustomLayout/>
+       
        <div class="tela">
         <h1>
-            Exercicio 1
+            Exercício 1
         </h1>
         <h4>Suas opções</h4>
         <ChildComponent

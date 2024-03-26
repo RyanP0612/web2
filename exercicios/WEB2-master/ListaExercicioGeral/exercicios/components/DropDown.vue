@@ -17,7 +17,7 @@ const formattedOptions = props.options.map(option => ({
 
 const a = ref('thjrjr6j6'); // Use ref para criar uma variável reativa
 
-const emitVariable = () => {
+const teste = () => {
   
   
   emits('customEvent', selectedOption.value.name); // Use a.value para obter o valor atual
@@ -26,11 +26,12 @@ const emitVariable = () => {
 
 <template>
   <div>
-    <Dropdown v-model="selectedOption" :options="formattedOptions" optionLabel="name" />
+
+    <Dropdown v-model="selectedOption" :options="formattedOptions" optionLabel="name" @change="teste"/>
 
     <div>
       <br>
-      <button @click="emitVariable">Emit</button>
+     
     </div>
   </div>
 </template>
