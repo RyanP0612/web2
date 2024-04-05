@@ -11,28 +11,30 @@
         password: ''
     });
 
-    //para lidar com promises, podemos usar o try/catch com o async/await    
-    /*const submitLogin = async()=>{
-        console.log("trying to login with credentials below:", credentials);
-        try{
-            await signIn(credentials, {redirect: false});
-            navigateTo('/home');
-        } catch(error){
-            console.log("Error when trying to login: ", error);
-        }
-    }*/
-    
-    //também podemos lidar com Promises usando o then/catch
+    // para lidar com promisses podemos usar o try catch com o async/await
+    // const submitLogin = async()=>{
+    //     console.log("trying to login with credentials below:", credentials);
+    //     try{
+    //         await signIn(credentials, {redirect: false});
+    //         navigateTo('/home');
+    //     } catch(error){
+    //         console.log("Error when trying to login: ", error);
+    //     }
+    // }
+
+    //Também podemos lidar com promisses usando o then/catch
     const submitLogin = ()=>{
-        console.log("trying to login with credentials below:", credentials);        
-        signIn(credentials, {redirect: false})
-        .then(()=>{
-            console.log("successfully logged!!");
+        console.log("trying to login with credentials below:", credentials);
+        console.log("Logado com sucesso")
+        signIn(credentials, {redirect: false}).then(()=>{
             navigateTo('/home');
         })
+        
         .catch((error)=>{
             console.log("Error when trying to login: ", error);
-        });
+    })
+       
+     
     }
     
 
