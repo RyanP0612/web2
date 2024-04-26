@@ -30,3 +30,4 @@ class DeadlineView(ModelViewSet):
     queryset = Deadline.objects.all()
     serializer_class = DeadlineSerializer
     permission_classes = (DeadlineCustomPermission,)
+
